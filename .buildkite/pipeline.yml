@@ -1,5 +1,7 @@
 steps:
   - command: chmod u+x ./deploy.sh && bash  ./deploy.sh
+    manual:
+      allowed: false
     plugins:
       docker#v1.4.0:
         image: "node:9"
