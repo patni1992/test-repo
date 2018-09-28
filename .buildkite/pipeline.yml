@@ -2,10 +2,12 @@ steps:
   - name: ":docker:"
     plugins:
       docker-compose#v2.4.1:
+        build: test
+
   - wait
 
 steps:
-  - command: node --version
+  - command: yarn install
     plugins:
       docker-compose#v2.4.1:
         image: "node:7"
