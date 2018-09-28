@@ -1,28 +1,6 @@
 steps:
-  - name: ":docker:"
-        # image-repository: #path-to-server
-    # agents:
-    #   queue: elastic-builders
-    # timeout_in_minutes: 10
-    #
-
-  - wait
-
-  - name: ":hammer_and_wrench:"
-    command: yarn build
-    # https://github.com/buildkite-plugins/docker-compose-buildkite-plugin#artifacts
-    # artifact_paths: 'lib/*'
-    # artifact_paths: 'dist/stats.json'
-    timeout_in_minutes: 10
-    # agents:
-    #   queue: elastic
-   
-
-  - wait
-
-  - name: ":eslint:"
-    command: yarn lint:js
-    timeout_in_minutes: 2
-  #   agents:
-  #     queue: elastic
- 
+  - command: yarn install
+    plugins:
+      docker#v1.4.0:
+        image: "node:7"
+        workdir: /app
