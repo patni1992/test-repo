@@ -1,3 +1,4 @@
+set -o pipefail
 echo "installing dependecies"
 yarn install 
  echo "linting"
