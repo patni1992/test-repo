@@ -8,7 +8,7 @@ steps:
   - wait
 
 steps:
-  - command: node --version
+  - command: ls && node --version
     plugins:
       docker-compose#v2.4.1:
        run: test
