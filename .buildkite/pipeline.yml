@@ -3,12 +3,13 @@ steps:
     plugins:
       docker-compose#v2.4.1:
         build: test
-
+        image: "node:7"
+        workdir: /app
   - wait
 
 steps:
   - command: node --version
     plugins:
       docker-compose#v2.4.1:
-        image: "node:7"
-        workdir: /app
+       run: test
+       
