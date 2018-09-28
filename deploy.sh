@@ -1,1 +1,6 @@
-echo This is a pen.
+echo "installing dependecies"
+yarn install 
+ echo "linting"
+ yarn run lint
+  echo "cleaning up"
+ yarn install --production --ignore-scripts --prefer-offline
