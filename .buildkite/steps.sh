@@ -1,3 +1,4 @@
+set -euo pipefail
 yarn install 
 echo "installing dependecies"
  
