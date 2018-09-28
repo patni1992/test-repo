@@ -1,5 +1,6 @@
 steps:
-  - command: ls
+  - command: /.buildkite/steps.sh
     plugins:
-      docker-compose#v2.5.1:
-        run: app
+      docker#v1.4.0:
+        image: "node:7"
+        workdir: /app
