@@ -1,5 +1,5 @@
 steps:
-  - command: npm install
+  - command: node --version
     plugins:
       docker#v1.4.0:
         image: "node:7"
