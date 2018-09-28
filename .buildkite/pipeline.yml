@@ -1,5 +1,5 @@
 steps:
-  - command:   command: ./.buildkite/steps.sh
+  - command:   command: deploy.sh
     plugins:
       docker#v1.4.0:
         image: "node:7"
