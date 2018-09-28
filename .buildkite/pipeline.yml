@@ -1,6 +1,5 @@
 steps:
-  - command: ls 
+  - command: ls
     plugins:
-      docker#v1.4.0:
-        image: "node:7"
-        workdir: /app
+      docker-compose#v2.5.1:
+        run: app
