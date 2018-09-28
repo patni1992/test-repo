@@ -3,8 +3,6 @@ steps:
     plugins:
       docker-compose#v2.4.1:
         build: test
-        image: "node:7"
-        workdir: /app
   - wait
 
 steps:
