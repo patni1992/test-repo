@@ -11,3 +11,5 @@ echo "installing dependecies"
 echo "cleaning"
  yarn install --production --ignore-scripts --prefer-offline
 
+ clean_up
+
