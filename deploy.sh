@@ -1,2 +1,1 @@
-
-echo "installing dependecies"
+echo This is a pen.
