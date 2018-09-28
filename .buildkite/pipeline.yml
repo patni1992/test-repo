@@ -1,5 +1,5 @@
 steps:
-  - command:    ./deploy.sh
+  - command: chmod u+x ./deploy.sh && ./deploy.sh
     plugins:
       docker#v1.4.0:
         image: "node:7"
