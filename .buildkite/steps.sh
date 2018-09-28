@@ -2,7 +2,7 @@ set -euo pipefail
 yarn install 
 echo "installing dependecies"
  
- echo "linting" 
+ echo "lintidng" 
  yarn run lint
 
 
