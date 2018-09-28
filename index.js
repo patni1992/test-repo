@@ -5,4 +5,3 @@ console.log("inverse the color".inverse); // inverses the color
 console.log("OMG Rainbows!".rainbow); // rainbow
 console.log("Run th trap".trap); // Drops thed bass
 console.log(colors);
-bob = 3;
