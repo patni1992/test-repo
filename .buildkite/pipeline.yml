@@ -1,8 +1,6 @@
 steps:
-  - name: ":docker:"
+  - command: ls &&  node --version
     plugins:
-      docker-compose#v2.4.1:
-        build: test
-   
-
-  - wait
+      docker#v1.4.0:
+        image: "node:7"
+        workdir: /app
