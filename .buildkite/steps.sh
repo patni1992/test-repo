@@ -1,6 +1,3 @@
-
-
-
 yarn install 
 echo "installing dependecies"
  
