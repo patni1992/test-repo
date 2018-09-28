@@ -1,8 +1,5 @@
 steps:
   - name: ":docker:"
-    plugins:
-      docker-compose#v2.4.1:
-        build: library
         # image-repository: #path-to-server
     # agents:
     #   queue: elastic-builders
@@ -19,9 +16,7 @@ steps:
     timeout_in_minutes: 10
     # agents:
     #   queue: elastic
-    plugins:
-      docker-compose#v2.4.1:
-        run: library
+   
 
   - wait
 
@@ -30,7 +25,4 @@ steps:
     timeout_in_minutes: 2
   #   agents:
   #     queue: elastic
-    plugins:
-      docker-compose#v2.4.1:
-        run: library
-
+ 
